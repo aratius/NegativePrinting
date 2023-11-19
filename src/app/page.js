@@ -247,6 +247,8 @@ export default function Home() {
 
   const onEnd = (e) => {
     console.log('end', e);
+    // ループ再生
+    player.current.playVideoAt(0);
   };
 
   const onStateChange = (e) => {
