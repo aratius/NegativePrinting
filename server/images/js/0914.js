@@ -1,4 +1,4 @@
 const IMAGES = [
   ``,
 ];
-export default IMAGES;
+module.exports = IMAGES;
