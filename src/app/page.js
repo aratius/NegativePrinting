@@ -258,7 +258,16 @@ export default function Home() {
             }}
             style={{ opacity }}
           ></Youtube> :
-          <a href='#' onClick={(e) => setInitialized(true)}>init</a>
+          <a 
+            href='#' 
+            onClick={(e) => setInitialized(true)}
+            style={{
+              color: "white",
+              display: "inlineBlock",
+              width: "100%",
+              height: "100%",
+            }}
+          >init</a>
       }
     </>
   );
