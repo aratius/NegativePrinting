@@ -1,2 +1,2 @@
-const IMAGES = [``];
+const IMAGES = [];
 module.exports = IMAGES;
