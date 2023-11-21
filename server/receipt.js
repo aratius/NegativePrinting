@@ -8,7 +8,7 @@ const getHeader = (places, dates) => {
 
   return `{w:35}
 
-  
+
  ^^^\`${dateStr}\`
 
  Negative Printing / 2023
@@ -16,15 +16,15 @@ const getHeader = (places, dates) => {
 
 
  {w:35}
- ${places.join(" - ")}
+ ${places.join("-")}
 
  `;
 };
 
 const getText = (text) => {
   return `{w:35}
-|${text}`
-}
+|${text}`;
+};
 
 const getFooter = (note) => {
   return `
@@ -40,9 +40,11 @@ const getFooter = (note) => {
 
 {code:${note}; option:qrcode,5,L}
 
+
+
 {code:202309021002; option:code128,4,72}
 
 `;
 };
 
-module.exports = { getHeader, getFooter,getText };
+module.exports = { getHeader, getFooter, getText };

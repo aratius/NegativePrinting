@@ -31,7 +31,7 @@ const onReceive = (e) => {
   } else if (type == 'image') {
     const date = value;
     const base64StrList = IMAGES[date];
-    queue.push({ time: 3000, text: `\n\n{image:${base64StrList[Math.floor(Math.random() * base64StrList.length)]}}` });
+    if (base64StrList.length > 0) queue.push({ time: 3000, text: `\n\n{image:${base64StrList[Math.floor(Math.random() * base64StrList.length)]}}` });
   }
 
   if (queue.length == 1) doQueue();
