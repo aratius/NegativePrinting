@@ -4,7 +4,7 @@ const getHeader = (places, dates) => {
   };
   let dateStr = "";
   dateStr += getDateStr(dates[0]);
-  if (dates.length > 1) dateStr += ` - ${getDateStr(dates[dates.length - 1])}`;
+  if (dates.length > 1) dateStr += `-${getDateStr(dates[dates.length - 1])}`;
 
   return `{w:35}
 
@@ -16,7 +16,7 @@ const getHeader = (places, dates) => {
 
 
  {w:35}
- ${places.join("-")}
+ ${places.join(" - ")}
 
  `;
 };
