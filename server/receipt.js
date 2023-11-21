@@ -40,6 +40,8 @@ const getFooter = (note) => {
 
 {code:${note}; option:qrcode,5,L}
 
+
+
 {code:202309021002; option:code128,4,72}
 
 `;
