@@ -263,11 +263,14 @@ export default function Home() {
             onClick={(e) => setInitialized(true)}
             style={{
               color: "white",
-              display: "inlineBlock",
-              width: "100%",
-              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100vw",
+              height: "100vh",
+              fontSize: "3rem"
             }}
-          >init</a>
+          >click to start</a>
       }
     </>
   );
