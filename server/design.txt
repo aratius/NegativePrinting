@@ -5,12 +5,10 @@
 Negative Printing / 2023
 arata matsumoto
 
-  {border:line}
-  {w:16}
-  |^^^Receipt|
-  {border:none}
 
 {w:35}
+Kanagawa - Osaka
+
 |朝イチに起床
 |クマ財団で出会った友達が真鶴に住んでいて、遊びに行く
 |大阪から高速バスで御殿場まで
