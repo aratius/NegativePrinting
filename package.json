@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node server/boot.js & node server/app.js",
     "lint": "next lint"
   },
   "dependencies": {
     "kill-port": "^2.0.1",
     "next": "14.0.3",
-    "open": "^9.1.0",
+    "open": "^8.4.0",
     "react": "^18",
     "react-dom": "^18",
     "react-youtube": "^10.1.0",

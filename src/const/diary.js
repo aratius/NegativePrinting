@@ -1,6 +1,7 @@
 const DIARIES = {
   '0902': {
     dates: ['0902'],
+    note: 'https://note.com/aualrxse/n/n49ae21719f46?sub_rt=share_crp',
     places: ['Osaka', 'Kanagawa'],
     text: `朝イチに起床
 クマ財団で出会った友達が真鶴に住んでいて、遊びに行く
@@ -25,6 +26,7 @@ const DIARIES = {
   },
   '0903': {
     dates: ['0903'],
+    note: 'https://note.com/aualrxse/n/n3d02efcfd643?sub_rt=share_crp',
     places: ['Kanagawa', 'Tokyo', 'Bangkok'],
     text: `朝真鶴で起床
 家の近辺を散歩した、山側は坂が多くてなかなか運動になった
@@ -56,6 +58,7 @@ const DIARIES = {
   },
   '0904': {
     dates: ['0904'],
+    note: 'https://note.com/aualrxse/n/nd05f9a02fe2c?sub_rt=share_crp',
     places: ['Bangkok', 'Munich', 'Linz'],
     text: `バンコクでのトランジット待機を経て、いよいよミュンヘン行きの飛行機へ
 今度は搭乗前のインストラクションがきちんとあったし、座席のモニタにもリモコンがついていた
@@ -103,12 +106,14 @@ DB（ドイツ鉄道）の券売機があったので目的地にLinzと入力�
   },
   '0905': {
     dates: ['0905'],
+    note: 'https://note.com/aualrxse/n/ncee05d3add9e?sub_rt=share_crp',
     places: ['Linz'],
     text: `インストールで忙しく、日記を書く気にならなかった
 気が向いたら書く`
   },
   '0906-0910': {
     dates: ['0906', '0907', '0908', '0909', '0910'],
+    note: 'https://note.com/aualrxse/n/nb3921dc7c13e?sub_rt=share_crp',
     places: ['Linz'],
     text: `アルスエレクトロニカ期間
 メディアアートの過剰摂取に陥り、とても幸せなカオスだった
@@ -125,6 +130,7 @@ DB（ドイツ鉄道）の券売機があったので目的地にLinzと入力�
   },
   '0911': {
     dates: ['0911'],
+    note: 'https://note.com/aualrxse/n/n44485284207e?sub_rt=share_crp',
     places: ['Vienna', 'Olomouc'],
     text: `ウィーンにて朝みんなを見送り、そこから付近を散策した
 でっかい宮殿があり、今は美術館だそう
@@ -137,6 +143,7 @@ DB（ドイツ鉄道）の券売機があったので目的地にLinzと入力�
   },
   '0912': {
     dates: ['0912'],
+    note: 'https://note.com/aualrxse/n/nceb7d0281c3f?sub_rt=share_crp',
     places: ['Olomouc'],
     text: `朝は7時に起きた、10月にある展示の打ち合わせだ
 前日に変換器を失くしていたためPCが使えず、スマホから参加した2時間ほどでおわり、チェックアウトの時間になって外へ出た
@@ -184,6 +191,7 @@ DB（ドイツ鉄道）の券売機があったので目的地にLinzと入力�
   },
   '0913': {
     dates: ['0913'],
+    note: 'https://note.com/aualrxse/n/nd5ae1b2c4d62?sub_rt=share_crp',
     places: ['Olomouc', 'Ružomberok', 'Lúčky'],
     text: `電車のため朝早くに起き、まずはショッピングモールへと向かう
 Lightningケーブルを購入した
@@ -227,6 +235,7 @@ Lightningケーブルを購入した
   },
   '0914': {
     dates: ['0914'],
+    node: 'https://note.com/aualrxse/n/na83548e5eb09?sub_rt=share_crp',
     places: ['Lúčky'],
     text: `この日は一日仕事、だけど、朝から阪神が優勝したのでこの日ばかりはずっと阪神関連のYouTubeばっかり見ていたし、ずっと泣いていた
 昼からはささいなお祝いとしてスーパーにお菓子を買いに行った
@@ -235,6 +244,7 @@ Lightningケーブルを購入した
   },
   '0915': {
     dates: ['0915'],
+    note: 'https://note.com/aualrxse/n/nde3854c42a4d?sub_rt=share_crp',
     places: ['Lúčky', 'Ružomberok', 'Budapest'],
     text: `朝起きて、バス停へと向かう
 逆側の道路へとバスが来たので慌てて道路を渡り、乗車した
@@ -273,6 +283,7 @@ Lightningケーブルを購入した
   },
   '0916': {
     dates: ['0916'],
+    note: 'https://note.com/aualrxse/n/nc98a58a37439?sub_rt=share_crp',
     places: ['Budapest'],
     text: `前日遅かったので、朝はゆっくりと起きた、チェックアウトの11:00に外に出て、駅へと向かう
 切符を購入、打刻機に通し、ホームへ向かう、地下に降りるエスカレータがやけに長い
@@ -292,6 +303,7 @@ Lightningケーブルを購入した
   },
   '0917': {
     dates: ['0917'],
+    note: 'https://note.com/aualrxse/n/n6d16c0fc22b0?sub_rt=share_crp',
     places: ['Budapest', 'Bucharest', 'Sinaia'],
     text: `バスは割と寝れた、睡眠薬のおかげ、途中停車するたびに人が降りていったので隣も空き、狭い二人掛けの席に丸まるようにして横にもなった、それでも断続的に起きたり寝たり、姿勢を変えたりを繰り返していた
 途中の休憩時に、バスのトイレに入り小便していると猛烈にドアをノックされ、済んだのち出ると、バスのトイレが壊れているのであちらのコンビニのトイレを使えとのこと、まだ小便していない感を出しながらコンビニの方に向かうそぶりをした、うんこしてたらめんどくさいことになっていた
@@ -329,6 +341,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0918': {
     dates: ['0918'],
+    note: 'https://note.com/aualrxse/n/n8cfa53442e0e?sub_rt=share_crp',
     places: ['Bucharest', 'Sofia'],
     text: `電車は定刻通りに来て、乗り込んだ
 2時間くらいで着くのだが、思えばこの時から時間がやけに長く感じた
@@ -376,6 +389,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0919': {
     dates: ['0919'],
+    note: 'https://note.com/aualrxse/n/n72689ee7fbbd?sub_rt=share_crp',
     places: ['Sofia', 'Thessaloniki'],
     text: `ソフィアでゆっくりと起床した
 たくさん寝たおかげで体調がかなり回復した
@@ -397,6 +411,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0920': {
     dates: ['0920'],
+    note: 'https://note.com/aualrxse/n/ne5517d80ecce?sub_rt=share_crp',
     places: ['Thessaloniki'],
     text: `テッサロニキで起床
 朝のうちに当日夜のマルタ行きの飛行機を予約し、それまでテッサロニキ観光をすることに
@@ -417,6 +432,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0921': {
     dates: ['0921'],
+    node: 'https://note.com/aualrxse/n/nf48818b17450?sub_rt=share_crp',
     places: ['Thessaloniki'],
     text: `テッサロニキで起床
 相当に疲れが溜まっており、いつ寝ていつ起きていたのかは覚えていない
@@ -426,6 +442,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0922': {
     dates: ['0922'],
+    note: 'https://note.com/aualrxse/n/n03955147dc23?sub_rt=share_crp',
     places: ['Thessaloniki', 'Birżebbuġa'],
     text: `この日もゆっくりと起床し、チェックアウトをした
 一昨日よりもゆっくりと街を歩いてみることにして、特にラダディカと呼ばれる地区を歩き回っていた
@@ -473,6 +490,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0923': {
     dates: ['0923'],
+    note: 'https://note.com/aualrxse/n/n5e7fbb6a31a8?sub_rt=share_crp',
     places: ['Birżebbuġa', 'Valletta'],
     text: `前日の日記にもある通り、朝方にチェックインした宿で、昼過ぎまで寝ていた
 ちなみにここの宿は民泊で、相当お年を召したおじいちゃんとおばあちゃんがやっているみたい
@@ -512,6 +530,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0924': {
     dates: ['0924'],
+    note: 'https://note.com/aualrxse/n/nd75b1fc9be1b?sub_rt=share_crp',
     places: ['Birżebbuġa', 'St Paul\'s Bay'],
     text: `朝はゆっくりめに起床
 部屋で二度寝しようとするとドアをノックされ、朝ごはんは食べるのかと聞かれた
@@ -559,6 +578,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0925': {
     dates: ['0925'],
+    note: 'https://note.com/aualrxse/n/n9185fb13405b?sub_rt=share_crp',
     places: ['Birżebbuġa'],
     text: `8時くらいに起き、朝食を摂った
 水着がないので海には入らないが、一丁前に肌は焼いて帰りたかったので、ビーチのそばのベンチへ、ミネラルウォーターをかかえてむかった
@@ -575,6 +595,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0926': {
     dates: ['0926'],
+    note: 'https://note.com/aualrxse/n/n49878778d5b4?sub_rt=share_crp',
     places: ['Malta', 'Paris', 'Brussels'],
     text: `フライト時間が早いため2:30に起き、Boltでタクシーを呼んだ
 すぐに来てくれて、スムーズに空港まで着いた
@@ -630,6 +651,7 @@ https://en.m.wikipedia.org/wiki/Pele%C8%99_Castle
   },
   '0927': {
     dates: ['0927'],
+    note: 'https://note.com/aualrxse/n/nddc7b2250af7?sub_rt=share_crp',
     places: ['Brussels', 'Hague'],
     text: `朝起き、チェックアウト、この日は昼からオランダへとバス移動なので、それまで時間を潰す
 SIMの容量が切れていたので、買いに行ったが、高額だったので一度お財布と相談、のちに序盤に使っていたSIMの容量が実はまだあったことが判明して解決
@@ -650,6 +672,7 @@ SIMの容量が切れていたので、買いに行ったが、高額だった�
   },
   '0928': {
     dates: ['0928'],
+    note: 'https://note.com/aualrxse/n/ndfdee850149f?sub_rt=share_crp',
     places: ['Hague', 'Hamburg', 'Copenhagen'],
     text: `知人宅で起床
 お子さんの宿題を一緒に見ながら、算数や社会の話をした
@@ -696,6 +719,7 @@ SIMの容量が切れていたので、買いに行ったが、高額だった�
   },
   '0929': {
     dates: ['0929'],
+    note: 'https://note.com/aualrxse/n/n8081056eca23?sub_rt=share_crp',
     places: ['Copenhagen'],
     text: `ドミトリーで起床
 ドミトリーは狭く、かつ他の人もたくさんいるため、下手に支度して目立つのが鬱陶で、支度が遅くなる傾向にある
@@ -732,6 +756,7 @@ SIMの容量が切れていたので、買いに行ったが、高額だった�
   },
   '0930': {
     dates: ['0930'],
+    note: 'https://note.com/aualrxse/n/n4f186c3f2bca?sub_rt=share_crp',
     places: ['Copenhagen'],
     text: `起床し、外出
 コペンハーゲン滞在時は水を買うにも高いので、到着時に購入した1Lの水をこれでもかと口に含んでそれをその日の水分補給とする
@@ -784,6 +809,7 @@ SIMの容量が切れていたので、買いに行ったが、高額だった�
   },
   '1001-1002': {
     dates: ['1001', '1002'],
+    note: 'https://note.com/aualrxse/n/n9845b98d615d?sub_rt=share_crp',
     places: ['Copenhagen', 'Abu Dhabi', 'Osaka'],
     text: `オール明け、ベッドで寝ないように何とか気絶ですませ、7:00になったところでホテルを出て駅へと向かう
 千鳥足は相変わらずで、側から見ると昨日クリスチャニアで見たブリブリの兄ちゃんと何ら変わりない

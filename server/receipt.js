@@ -8,6 +8,7 @@ const getHeader = (places, dates) => {
 
   return `{w:35}
 
+  
  ^^^\`${dateStr}\`
 
  Negative Printing / 2023
@@ -20,23 +21,28 @@ const getHeader = (places, dates) => {
  `;
 };
 
+const getText = (text) => {
+  return `{w:35}
+|${text}`
+}
+
 const getFooter = (note) => {
   return `
 
   {w:35}
-\===================================
+\\===================================
 
-  {w:25,10}
-  |Subtotal | 123EUR|
-  |Tax(10%) | 456EUR|
-  |^^Total | ^^789EUR|
-
-
-  {code:${note}; option:qrcode,5,L}
+{w:25,10}
+|Subtotal | 123EUR|
+|Tax(10%) | 456EUR|
+|^^Total | ^^789EUR|
 
 
-  {code:202309021002; option:code128,4,72}
-  `;
+{code:${note}; option:qrcode,5,L}
+
+{code:202309021002; option:code128,4,72}
+
+`;
 };
 
-module.exports = { getHeader, getFooter };
+module.exports = { getHeader, getFooter,getText };
