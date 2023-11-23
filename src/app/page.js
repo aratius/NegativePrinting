@@ -172,15 +172,16 @@ export default function Home() {
         }
         t += chars[j];
       }
-      while (texts.length * INTERVALS.TEXT > duration) {
-        const newTexts = [];
-        for (let j = 0; j < texts.length; j += 2) {
-          if (i == texts.length - 1) newTexts.push(texts[i]);
-          else newTexts.push(texts[i] + texts[i + 1]);
-        }
-        texts = newTexts;
-      }
       if (t != '') texts.push(t);
+    }
+    
+    while (texts.length * (INTERVALS.TEXT / 1000) > duration) {
+      const newTexts = [];
+      for (let i = 0; i < texts.length; i += 2) {
+        if (i == texts.length - 1) newTexts.push(texts[i]);
+        else newTexts.push(texts[i] + texts[i + 1]);
+      }
+      texts = newTexts;
     }
     const prevIndex = Math.floor(prevProg.current * texts.length);
     const crrIndex = Math.floor(prog * texts.length);
