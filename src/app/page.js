@@ -195,11 +195,10 @@ export default function Home() {
         // TODO: 進捗に応じて日記プリント
         // 途中
         print('diary', texts[crrIndex], INTERVALS.TEXT);
-      } else {
-        // TODO: 最後にQRとバーコード
-        // 最後
-        print('image', key, INTERVALS.IMAGE);
-        print('end', note, INTERVALS.EXCEPTION);
+        if (crrIndex == texts.length - 1) {
+          print('image', key, INTERVALS.IMAGE);
+          print('end', note, INTERVALS.EXCEPTION);
+        }
       }
     }
     // TODO: たまに画像を差し込む
