@@ -17,21 +17,21 @@ const doQueue = async () => {
 };
 
 const onReceive = (e) => {
-  const { type, value } = JSON.parse(e);
+  const { type, value, time } = JSON.parse(e);
   console.log(JSON.parse(e));
   if (type == 'start') {
     const { places, dates } = value;
-    queue.push({ time: 3000, text: getHeader(places, dates) });
+    queue.push({ time, text: getHeader(places, dates) });
   } else if (type == 'end') {
     const url = value;
-    queue.push({ time: 3000, text: getFooter(url) });
+    queue.push({ time, text: getFooter(url) });
   } else if (type == 'diary') {
     const text = value;
-    queue.push({ time: 1000, text: getText(text) });
+    queue.push({ time, text: getText(text) });
   } else if (type == 'image') {
     const date = value;
     const base64StrList = IMAGES[date];
-    if (base64StrList.length > 0) queue.push({ time: 3000, text: `\n\n{image:${base64StrList[Math.floor(Math.random() * base64StrList.length)]}}` });
+    if (base64StrList.length > 0) queue.push({ time, text: `\n\n{image:${base64StrList[Math.floor(Math.random() * base64StrList.length)]}}` });
   }
 
   if (queue.length == 1) doQueue();

@@ -138,16 +138,22 @@ export default function Home() {
     };
   });
 
-  const print = (type, value) => {
+  const print = (type, value, time) => {
     console.log('print', JSON.stringify(value));
     // TODO: ws send
-    sock.current.send(JSON.stringify({ type, value }));
+    sock.current.send(JSON.stringify({ type, value, time }));
   };
 
-  const checkPrint = (key, prog) => {
+  const checkPrint = (key, time, duration) => {
+    const prog = time / duration;
     const diary = DIARIES[key];
-    const texts = [];
+    let texts = [];
     const CHARS_PER_LINE = 35;
+    const INTERVALS = {
+      TEXT: 2000,
+      IMAGE: 4000,
+      EXCEPTION: 4000
+    };
     const splitedText = diary.text.split('\n');
     for (let i = 0; i < splitedText.length; i++) {
       const text = splitedText[i];
@@ -157,7 +163,7 @@ export default function Home() {
       for (let j = 0; j < chars.length; j++) {
         const char = chars[j];
         // 半角なら+1, 全角なら+2
-        const thisCharNum = char.match(/^[^\x01-\x7E\xA1-\xDF]+$/) ? 2 : 1
+        const thisCharNum = char.match(/^[^\x01-\x7E\xA1-\xDF]+$/) ? 2 : 1;
         charnum += thisCharNum;
         if (charnum > CHARS_PER_LINE) {
           texts.push(t);
@@ -165,6 +171,14 @@ export default function Home() {
           charnum = thisCharNum;
         }
         t += chars[j];
+      }
+      while (texts.length * INTERVALS.TEXT > duration) {
+        const newTexts = [];
+        for (let j = 0; j < texts.length; j += 2) {
+          if (i == texts.length - 1) newTexts.push(texts[i]);
+          else newTexts.push(texts[i] + texts[i + 1]);
+        }
+        texts = newTexts;
       }
       if (t != '') texts.push(t);
     }
@@ -174,21 +188,18 @@ export default function Home() {
     if (prevIndex > crrIndex) {
       // TODO: 最初のお決まりプリント
       // 最初
-      print('start', { places, dates });
-      print('diary', texts[0]);
+      print('start', { places, dates }, INTERVALS.EXCEPTION);
+      print('diary', texts[0], INTERVALS.TEXT);
     } else if (prevIndex < crrIndex) {
       if (crrIndex < texts.length) {
         // TODO: 進捗に応じて日記プリント
         // 途中
-        print('diary', texts[crrIndex]);
-
-        // TODO: 画像差し込む
-        // print('image', key);
+        print('diary', texts[crrIndex], INTERVALS.TEXT);
       } else {
         // TODO: 最後にQRとバーコード
         // 最後
-        print('image', key);
-        print('end', note);
+        print('image', key, INTERVALS.IMAGE);
+        print('end', note, INTERVALS.EXCEPTION);
       }
     }
     // TODO: たまに画像を差し込む
@@ -207,7 +218,7 @@ export default function Home() {
     if (remains < 1) setOpacity(0);
     const key = playlists[i].date;
     const prog = t / d;
-    checkPrint(key, prog);
+    checkPrint(key, t, d);
   };
 
   const onReady = async (e) => {
@@ -258,8 +269,8 @@ export default function Home() {
             }}
             style={{ opacity }}
           ></Youtube> :
-          <a 
-            href='#' 
+          <a
+            href='#'
             onClick={(e) => setInitialized(true)}
             style={{
               color: "white",
