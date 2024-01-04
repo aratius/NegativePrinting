@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "firebase": "^10.7.1",
     "kill-port": "^2.0.1",
     "next": "14.0.3",
     "open": "^8.4.0",
