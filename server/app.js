@@ -1,6 +1,7 @@
 const Ws = require("ws");
 const print = require('./print');
-const config = require('./config').printer1;
+const config1 = require('./config').printer1;
+const config2 = require('./config').printer2;
 const IMAGES = require('./images/js/images');
 const { getHeader, getFooter, getText } = require("./receipt");
 
@@ -9,7 +10,7 @@ const queue = [];
 const doQueue = async () => {
   while (queue.length > 0) {
     const { text, time } = queue[0];
-    print(text, config);
+    print(text, config1);
     console.log('doQueue', time);
     await new Promise(r => setTimeout(r, time));
     queue.shift();
