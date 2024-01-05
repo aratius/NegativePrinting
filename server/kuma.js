@@ -7,6 +7,7 @@ const IMAGES = require('./images/js/images');
 const { getHeader, getFooter, getText } = require("./receipt");
 
 let crrIndex = 0;
+let timer = null
 
 const setPrintData = () => {
   const key = Object.keys(DIARIES)[crrIndex];
@@ -36,6 +37,7 @@ const init = () => {
   const printingDataRef = ref(db, '/');
 
   const unsubscribe = onValue(printingDataRef, (snapshot) => {
+    console.log('val');
     const data = snapshot.val();
     let shouldPrintAny = false
     for (const key in data) {
@@ -47,7 +49,12 @@ const init = () => {
       shouldPrintAny = true
     }
     // どれだけキューが溜まっていてもまとめて一回だけ
-    if(shouldPrintAny) setPrintData();
+    if(shouldPrintAny) {
+      if(timer != null) clearTimeout(timer)
+      timer = setTimeout(() => {
+        setPrintData(); 
+      }, 100)
+    }
   });
 
   // Ctrl+Cが押された時のイベント
