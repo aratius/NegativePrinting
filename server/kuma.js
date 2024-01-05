@@ -13,7 +13,7 @@ const setPrintData = () => {
   const data = DIARIES[key];
 
   const text = `${getHeader(data.places, data.dates)}${getText(data.text)}${getFooter(data.note)}`;
-  console.log(text);
+  console.log("print ---");
   print(text, config);
 
   crrIndex++;
@@ -21,6 +21,7 @@ const setPrintData = () => {
 };
 
 const init = () => {
+  console.log("init ---");
 
   // Firebaseの設定
   const firebaseConfig = {
@@ -36,14 +37,17 @@ const init = () => {
 
   const unsubscribe = onValue(printingDataRef, (snapshot) => {
     const data = snapshot.val();
+    let shouldPrintAny = false
     for (const key in data) {
       if (data[key].printed) continue;
       set(ref(db, `/${key}`), {
         ...data[key],
         printed: true
       });
-      setPrintData();
+      shouldPrintAny = true
     }
+    // どれだけキューが溜まっていてもまとめて一回だけ
+    if(shouldPrintAny) setPrintData();
   });
 
   // Ctrl+Cが押された時のイベント
