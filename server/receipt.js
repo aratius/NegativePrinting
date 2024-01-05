@@ -23,7 +23,7 @@ const getHeader = (places, dates) => {
 
 const getText = (text) => {
   return `{w:35}
-|${text}`;
+${text.split("\n").map(t => `|${t}\n`).join("")}`;
 };
 
 const getFooter = (note) => {
