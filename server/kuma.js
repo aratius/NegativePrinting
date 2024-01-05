@@ -1,5 +1,5 @@
 const firebase = require('firebase/app');
-const { getDatabase, onValue, ref } = require('firebase/database');
+const { getDatabase, onValue, ref, set } = require('firebase/database');
 const DIARIES = require('./diary');
 const print = require('./print');
 const config = require('./config').printer1;
@@ -38,7 +38,7 @@ const init = () => {
     const data = snapshot.val();
     for (const key in data) {
       if (data[key].printed) continue;
-      ref(db, `/${key}`).set({
+      set(ref(db, `/${key}`), {
         ...data[key],
         printed: true
       });
