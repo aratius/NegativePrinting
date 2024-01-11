@@ -49,15 +49,6 @@ export default function Home() {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        {/* OG */}
-        <meta property="og:url" content="/face.jpg" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="ネガティブ・プリンティング（松本　新）" />
-        <meta property="og:description" content="" />
-        <meta property="og:site_name" content="FloatingMyFace" />
-        <meta property="og:image" key="ogImage" content="/face.jpg" />
-        <meta name="twitter:card" key="twitterCard" content="summary_large_image" />
-        <meta name="twitter:site" content={`@$aualrxse`} />
       </Head>
       <main className={styles.main}>
         <p>Negative Printing (Arata Matsumoto)</p>
