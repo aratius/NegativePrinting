@@ -5,18 +5,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
+}
+
+.main>h2 {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .main>p {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .main>a {
-  width: 100px;
-  height: 30px;
+  width: 200px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid white;
   border-radius: 5px;
+}
+
+.main>a:active {
+  color: black;
+  background-color: #fff;
 }

@@ -51,11 +51,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <p>Negative Printing (Arata Matsumoto)</p>
+        <h2>Negative Printing (Arata Matsumoto)</h2>
         {
           enabled ?
-            <a href="#" onClick={onClick}>Print</a> :
-            <p>You&apos;ve already printed, Thank you.</p>
+            <>
+              <p>Press the button to print a day&apos;s worth of diary entries. You may take it home with you or fold it.</p>
+              <a href="#" onClick={onClick}>Print</a>
+            </>
+            :
+            <p>You have already printed it. Thank you very much.</p>
         }
       </main>
     </>
