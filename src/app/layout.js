@@ -3,14 +3,16 @@ import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const siteName = 'ネガティブ・プリンティング（松本　新）';
+
 export const metadata = {
-  title: 'ネガティブ・プリンティング（松本　新）',
+  title: siteName,
   description: '',
   openGraph: {
     title: 'ネガティブ・プリンティング（松本　新）',
     description: '',
     url: 'https://negative-printing.aualrxse.com',
-    siteName: 'ネガティブ・プリンティング（松本　新）',
+    siteName,
     locale: 'ja_JP',
     type: 'website',
     images: [{
