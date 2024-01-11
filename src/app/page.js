@@ -50,7 +50,6 @@ export default function Home() {
       <Head>
         <title>ネガティブ・プリンティング（松本　新）</title>
         <link rel="icon" href="/favicon.ico" />
-
         {/* OG */}
         <meta property="og:url" content="/face.jpg" />
         <meta property="og:type" content="website" />
